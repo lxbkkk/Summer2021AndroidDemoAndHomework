@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <!--顶部标题布局-->
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/Bourben1"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_marginVertical="6dp"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/zero"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/Bourben2"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_marginVertical="6dp"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/zero"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/Bourben3"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_marginVertical="6dp"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/zero"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/Bourben4"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_marginVertical="6dp"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/zero"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/Bourben5"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_marginVertical="6dp"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/zero"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/Bourben6"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_marginVertical="6dp"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/zero"
+                />
+
+        </LinearLayout>
+        <!--中间滑动部分-->
+        <!--底部导航按钮-->
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_content"
+            android:layout_width="wrap_content"
+            android:layout_height="617dp"
+            android:layout_weight="1"
+            android:background="@color/white"></androidx.viewpager.widget.ViewPager>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white">
+            <!--按钮1-->
+            <LinearLayout
+                android:id="@+id/ll_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_view"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/viewblue" />
+
+                <TextView
+                    android:id="@+id/tv_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="Discover"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <!--按钮2-->
+            <LinearLayout
+                android:id="@+id/ll_upload"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_upload"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/uploadnew" />
+
+                <TextView
+                    android:id="@+id/tv_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="Upload"
+                    android:color="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <!--按钮3-->
+            <LinearLayout
+                android:id="@+id/ll_radio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_radio"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/radionew" />
+
+                <TextView
+                    android:id="@+id/tv_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="Record"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

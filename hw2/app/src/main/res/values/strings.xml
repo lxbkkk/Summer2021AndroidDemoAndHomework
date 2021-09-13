@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">hw2_2</string>
+    <string name="date">2021-07-13 获得</string>
+    <string name="GET">最可爱小猫</string>
+    <string name="cons">恭喜大胖成为紫金港最可爱的聪明小猫！</string>
+    <string name="num">表扬次数 100/100次</string>
+    <string name="button_go">去打滚儿</string>
+</resources>
